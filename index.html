@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Under Construction</title>
+  <style>
+    body {
+      background-color: #fefefe;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 150vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 20px;
+      color: #444;
+    }
+
+    .btn {
+      z-index: 10;
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    #animation_container{
+        z-index: 1;
+        background-color: #fefefe;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+    }
+
+    #animation {
+      /* top: -100px;
+      left: 300px; */
+      width: 500px;
+      height: 500px;
+    }
+
+    #animation2 {
+        position: relative;
+        top: -190px;
+        right: 100px;
+        width: 500px;
+        height: 500px;
+    }
+
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+</head>
+<body>
+  <div id="animation_container">
+    <div id="animation"></div>
+    <div id="animation2"></div>
+  </div>
+  <h1>404 Error ~ The Notes Website is still under building ~</h1>
+  <button class="btn" onclick="goBack()">← Back to Main Site</button>
+  <div id="animation2"></div>
+  <script>
+    // Load Lottie animation
+    lottie.loadAnimation({
+      container: document.getElementById('animation2'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'Animation - 1747228036546.json' 
+    });
+    lottie.loadAnimation({
+      container: document.getElementById('animation'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'Animation - 1747228598581.json' 
+    });
+
+    function goBack() {
+      window.location.href = "https://your-main-website.com"; // ← 請改成你的主網站網址
+    }
+  </script>
+
+</body>
+</html>
